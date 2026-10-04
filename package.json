@@ -1,0 +1,21 @@
+{
+  "name": "cobs-frame-backend",
+  "version": "1.0.0",
+  "description": "COBS 字节封装与分块流帧还原后端",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/cobs.test.js dist/test/stream.test.js",
+    "start": "node dist/src/cli.js serve",
+    "demo": "npm run build && node dist/src/cli.js demo",
+    "cli": "node dist/src/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
