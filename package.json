@@ -1,0 +1,20 @@
+{
+  "name": "a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && node --test test/cobs.test.cjs",
+    "build": "tsc",
+    "start": "node dist/cli.js serve",
+    "demo": "npm run build && node dist/cli.js demo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
